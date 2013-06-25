@@ -1,4 +1,4 @@
-#include "prime_below.cpp"
+#include "lib/prime.h"
 
 #define PRIME 1000000
 
@@ -16,7 +16,7 @@ long long get_multiple(long long* big, long long small)
 
 int main()
 {
-	vector<long long> primes = prime_below(PRIME, false);
+	vector<long long> primes = primes_below(PRIME, false);
 	
 	int counter = 0;
 
@@ -37,8 +37,6 @@ int main()
 				long long mul = get_multiple(&temp, primes[index]);
 				if (mul > 0)
 				{
-					//cout << triangle << " " << primes[index] << " " << mul << endl;
-				
 					answer *= mul + 1;
 				}
 			} 

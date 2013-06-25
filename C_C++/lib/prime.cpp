@@ -1,13 +1,10 @@
-#include <vector>
-#include <bitset>
-#include <cmath>
-#include <iostream>
+#include "prime.h"
 
-using namespace std;
+#define BITSET_LENGTH (1024*1024*8)
 
-vector<long long> prime_below(long long ceiling, bool is_display)
+vector<long long> primes_below(long long ceiling, bool is_display)
 {
-	bitset<1024000> bits;
+	bitset<BITSET_LENGTH> bits;
 	
 	bits.set();
 	bits.set(0, 0);
@@ -39,7 +36,7 @@ vector<long long> prime_below(long long ceiling, bool is_display)
 		}
 	}
 
-	cout << endl;
+	//cout << endl;
 	
 	return result;
 }
