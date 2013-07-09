@@ -9,6 +9,7 @@
 using namespace std;
 
 string add(string augend, string addend);
+string multiply(string multiplicand, string multiplier);
 string revert(string str);
 bool isInteger(string str);
 

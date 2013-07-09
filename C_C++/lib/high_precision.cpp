@@ -33,6 +33,10 @@ string add(string augend, string addend)
 	return revert(result);
 }
 
+string multiply(string multiplicand, string multiplier)
+{
+}
+
 string revert(string str)
 {
 	string new_str(str);

@@ -1,0 +1,6 @@
+# Compiled Source #
+*.o
+*.out
+*.exe
+*.swp
+*.class
